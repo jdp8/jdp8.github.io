@@ -1,35 +1,12 @@
-<!-- 
-  Hello 😊.
-
-  This template is designed and developed by Nisar Hassan Naqvi
-  for anyone to use for free or customize the way they like.
-
-  Github Repo: https://github.com/nisarhassan12/portfolio-template/
-  My Website: https://nisar.dev
-
-  For business & inquires, contact me => syednisarhassan12@gmail.com
--->
-
-<!--
-  Follow the instructions written in comments to create your stunning portfolio
--->
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<!--  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" /> -->
-
-  <!-- Put your site title here -->
-  <title>
-    Jonathan Perez | Software Developer/Data Scientist.
-  </title>
-
-  <meta name="description" content="Add small description of yourself.">
-  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
-  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <title>Jonathan Perez | Software Developer &amp; Data Scientist</title>
+  <meta name="description" content="Jonathan Perez — Software Developer and Data Scientist based in Puerto Rico. Specializing in Python, JavaScript, R, and data visualization." />
+  <meta name="keywords" content="Jonathan Perez, Software Developer, Data Scientist, Python, JavaScript, R, SQL, Tableau, Puerto Rico" />
   <link rel="stylesheet" href="index.css" />
 </head>
 
@@ -40,28 +17,28 @@
   <header class="header" role="banner" id="top">
     <div class="row">
       <nav class="nav" role="navigation">
+        <a href="#top" class="nav__logo">Jonathan Perez</a>
         <ul class="nav__items">
           <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-<!--          <li class="nav__item"><a href="#clients" class="nav__link">Clients</a></li>-->
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
       </nav>
     </div>
     <div class="header__text-box row">
       <div class="header__text">
         <h1 class="heading-primary">
-          <!-- Replace the following name with your name -->
           <span>Jonathan Perez</span>
         </h1>
-        <!-- Put a small paragraph about yourself -->
-        <p>A Software Developer and aspiring Data Scientist based in Puerto Rico.</p>
-        <a href="#contact" class="btn btn--pink">Get in touch</a>
+        <p>A <span class="hero__role"></span> based in Puerto Rico.</p>
+        <div class="header__cta">
+          <a href="#contact" class="btn btn--pink">Get in touch</a>
+          <a href="https://github.com/jdp8/" target="_blank" class="btn">GitHub</a>
+        </div>
       </div>
+    </div>
+    <div class="header__scroll-indicator">
+      <span></span>
     </div>
   </header>
 
@@ -71,106 +48,97 @@
 
     <section class="work" id="work">
       <div class="row">
-        <h2>My Work</h2>
+        <h2 class="animate-on-scroll">My Work</h2>
         <div class="work__boxes">
 
-          <!-- Each div with the work__box class is a project. -->
-
-          <div class="work__box">
+          <div class="work__box animate-on-scroll">
             <div class="work__text">
               <h3>Predicting PER Based on Advanced Stats</h3>
               <p>
                 Predicting PER Based on Advanced Basketball Statistics Report.
               </p>
               <ul class="work__list">
-                <li>R</li>
+                <li><span class="work__tag">R</span></li>
               </ul>
-
               <div class="work__links">
                 <a href="./projectPages/STAT420_FinalProject/Final_Project_STAT420.html" target="_blank" class="link__text">
                   View Project <span>&rarr;</span>
                 </a>
                 <a href="https://github.com/jdp8/STAT420_FinalProject" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub" loading="lazy">
                 </a>
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/Prediction_Plots.png" class="work__image" alt="Predicting PER Project" />
+              <img src="./images/Prediction_Plots.png" class="work__image" alt="Predicting PER Project" loading="lazy" />
             </div>
-          </div>          
-          
-          <div class="work__box">
+          </div>
+
+          <div class="work__box animate-on-scroll">
             <div class="work__text">
               <h3>US Covid Cases Dashboard</h3>
               <p>
                 US Covid Cases Dashboard created with Tableau as part of a Data Visualization course.
               </p>
               <ul class="work__list">
-                <li>Tableau</li>
+                <li><span class="work__tag">Tableau</span></li>
               </ul>
-
               <div class="work__links">
                 <a href="https://public.tableau.com/app/profile/jonathan1858/viz/USCOVIDCases_15925067073780/USCOVIDDashboard" target="_blank" class="link__text">
                   View Project <span>&rarr;</span>
                 </a>
-<!--                <a href="#">-->
-<!--                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">-->
-<!--                </a>-->
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/Covid_Dashboard.png" class="work__image" alt="US Covid Cases Dashboard Project" />
+              <img src="./images/Covid_Dashboard.png" class="work__image" alt="US Covid Cases Dashboard Project" loading="lazy" />
             </div>
           </div>
-    
-          <div class="work__box">
+
+          <div class="work__box animate-on-scroll">
             <div class="work__text">
               <h3>Puerto Rico Flights Information per Year</h3>
               <p>
                 DataMaps Visualization consisting of flights from/to Puerto Rico per year from 1990-2021.
               </p>
               <ul class="work__list">
-                <li>DataMaps</li>
-                <li>JavaScript</li>
-                <li>Data API</li>
+                <li><span class="work__tag">DataMaps</span></li>
+                <li><span class="work__tag">JavaScript</span></li>
+                <li><span class="work__tag">Data API</span></li>
               </ul>
-
               <div class="work__links">
                 <a href="./projectPages/PR_Flights_Info/datamaps_world_test.html" target="_blank" class="link__text">
                   View Project <span>&rarr;</span>
                 </a>
                 <a href="https://github.com/jdp8/PR_Flights_Info" title="View Source Code" target="_blank">
-                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub" loading="lazy">
                 </a>
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/DataMaps_Implementation.png" class="work__image" alt="PR DataMaps" />
+              <img src="./images/DataMaps_Implementation.png" class="work__image" alt="PR DataMaps" loading="lazy" />
             </div>
           </div>
 
-          <div class="work__box">
+          <div class="work__box animate-on-scroll">
             <div class="work__text">
               <h3>Python Selenium/bs4 FHA Condominium Scraper</h3>
               <p>
                 FHA scraper made with Python Selenium and Beautiful Soup.
               </p>
               <ul class="work__list">
-                <li>Python</li>
-                <li>Selenium</li>
-                <li>Beautiful Soup</li>
-                <li>PySimpleGUI</li>
+                <li><span class="work__tag">Python</span></li>
+                <li><span class="work__tag">Selenium</span></li>
+                <li><span class="work__tag">Beautiful Soup</span></li>
+                <li><span class="work__tag">PySimpleGUI</span></li>
               </ul>
-
               <div class="work__links">
-<!--                <a href="#" class="link__text">-->
-<!--                  Visit Site <span>&rarr;</span>-->
-<!--                </a>-->
+                <a href="https://github.com/jdp8/FHA_Scraper" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub" loading="lazy">
+                </a>
               </div>
             </div>
             <div class="work__image-box">
-              <img src="./images/FHA_GUI.png" class="work__image" alt="Python Selenium Project" />
+              <img src="./images/FHA_GUI.png" class="work__image" alt="Python Selenium Project" loading="lazy" />
             </div>
           </div>
 
@@ -178,43 +146,33 @@
       </div>
     </section>
 
-    <!-- ***** Clients ***** -->
-
-<!--    <section class="client" id="clients">-->
-<!--      <div class="row">-->
-<!--        <h2>Clients</h2>-->
-<!--        <div class="client__logos">-->
-<!--          &lt;!&ndash; Add logos of the clients or companies you'have worked with. &ndash;&gt;-->
-<!--          <img src="./images/ronjones.png" class="client__logo" alt="Company 2" />-->
-<!--          <img src="./images/goldengrid.png" class="client__logo" alt="Company 3" />-->
-<!--          <img src="./images/bullseye.png" class="client__logo" alt="Company 1" />-->
-<!--          <img src="./images/mighty-furnitures.png" class="client__logo" alt="Company 1" />-->
-<!--          <img src="./images/fastlane.png" class="client__logo" alt="Company 3" />-->
-<!--          <img src="./images/chippy.png" class="client__logo" alt="Company 1" />-->
-<!--        </div>-->
-<!--      </div>-->
-<!--    </section>-->
-
     <!-- ***** About ***** -->
 
-    <section class="about" id="about">
+    <section class="about section--alt" id="about">
       <div class="row">
-        <h2>About Me</h2>
-        <div class="about__content">
+        <h2 class="animate-on-scroll">About Me</h2>
+        <div class="about__content animate-on-scroll">
           <div class="about__text">
-            <!-- Replace the below paragraph with info about yourself -->
             <p>
               Software Developer with a Bachelor's degree in Computer Engineering and a Master's degree in Data Science.
               Experience with PHP, JavaScript, Python, R, SQL, among other programming languages.
               Continuously learning new skills, always seeking to improve in every area and gain more knowledge.
             </p>
-            <!-- Provide a link to your resume -->
-<!--            <a href="#" class="btn">My Resume</a>-->
+            <div class="about__skills">
+              <span class="about__skill-tag">PHP</span>
+              <span class="about__skill-tag">JavaScript</span>
+              <span class="about__skill-tag">Python</span>
+              <span class="about__skill-tag">R</span>
+              <span class="about__skill-tag">SQL</span>
+              <span class="about__skill-tag">Tableau</span>
+              <span class="about__skill-tag">Selenium</span>
+              <span class="about__skill-tag">D3.js</span>
+            </div>
+            <a href="#" class="btn">My Resume</a>
           </div>
 
           <div class="about__photo-container">
-            <!-- Add a nice photo of yourself -->
-            <img class="about__photo" src="./images/IMG.jpg" alt="Portfolio Picture" />
+            <img class="about__photo" src="./images/IMG.jpg" alt="Portfolio Picture" loading="lazy" />
           </div>
         </div>
       </div>
@@ -225,15 +183,13 @@
 
   <section class="contact" id="contact">
     <div class="row">
-      <h2>Contact</h2>
-      <div class="contact__info">
+      <h2 class="animate-on-scroll">Contact</h2>
+      <div class="contact__info animate-on-scroll">
         <p>
-          Feel free to contact me, whether it be for advice, job openings, etc.
-          I will do my best to respond back as quickly as possible. The quickest way to reach out
-          to me is via LinkedIn which is at the end of this page.
+          Feel free to reach out — whether for advice, job openings, or collaboration.
+          I'll do my best to respond as quickly as possible. The quickest way to reach me is via LinkedIn.
         </p>
-        <!-- Replace the email with yours -->
-<!--        <a href="mailto:you@example.com" class="btn">you@example.com</a>-->
+        <a href="https://www.linkedin.com/in/jonathan-perez-087956125/" target="_blank" class="btn btn--pink">Connect on LinkedIn</a>
       </div>
     </div>
   </section>
@@ -242,34 +198,19 @@
 
   <footer role="contentinfo" class="footer">
     <div class="row">
-      <!-- Update the links to point to your accounts -->
       <ul class="footer__social-links">
-<!--        <li class="footer__social-link-item">-->
-<!--          <a href="https://twitter.com/nisarhassan12/" title="Link to Twitter Profile">-->
-<!--            <img src="./images/twitter.svg" class="footer__social-image" alt="Twitter">-->
-<!--          </a>-->
-<!--        </li>-->
         <li class="footer__social-link-item">
           <a href="https://github.com/jdp8/" title="Link to Github Profile" target="_blank">
             <img src="./images/github.svg" class="footer__social-image" alt="Github">
           </a>
         </li>
-<!--        <li class="footer__social-link-item">-->
-<!--          <a href="https://codepen.io/nisar_hassan" title="Link to Codepen Profile">-->
-<!--            <img src="./images/codepen.svg" class="footer__social-image" alt="Codepen">-->
-<!--          </a>-->
-<!--        </li>-->
         <li class="footer__social-link-item">
           <a href="https://www.linkedin.com/in/jonathan-perez-087956125/" target="_blank">
             <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
           </a>
         </li>
       </ul>
-
-      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
-      <p>
-        &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
-      </p>
+      <p>&copy; 2024 Jonathan Perez</p>
     </div>
   </footer>
 
